@@ -56,6 +56,16 @@ Check that a library and function exist in its real docs before using them.
 5. Show what you changed and why. Keep diffs small and targeted; do not
    rewrite whole files unless asked.
 6. Use a git branch per task and small commits with clear messages.
+7. Before any task that involves a design choice (a data shape, a library, how
+   to handle an edge case), propose the options with trade-offs and a
+   recommendation, then wait for the owner's approval. Do not decide silently.
+   This takes priority over doing the work quickly.
+8. If you think the plan or an instruction is wrong or risky, say so before
+   implementing, and explain why in beginner-friendly terms.
+9. Before changing files, say what you intend to change. Afterward, summarize
+   what changed, why, which tests ran and their results.
+10. Check unfamiliar libraries, APIs, Pokémon TCG rules and data formats
+    against real documentation. If you could not verify something, say so.
 
 ## Domain rules (verify, do not guess)
 
