@@ -41,10 +41,12 @@ Check that a library and function exist in its real docs before using them.
 
 ## Commands (update these once the project exists)
 
-- Backend tests: `cd backend && pytest`
-- Run backend: `cd backend && uvicorn app.main:app --reload`
+Run the backend commands from the `backend` folder.
+
+- Backend tests: `.\.venv\Scripts\python.exe -m pytest`
+- Run backend: `.\.venv\Scripts\python.exe -m uvicorn app.main:app --reload`
 - Run frontend: `cd frontend && npm run dev`
-- Fetch card data: `cd backend && python scripts/fetch_cards.py`
+- Fetch card data: `.\.venv\Scripts\python.exe scripts/fetch_cards.py`
 
 ## How to work
 
