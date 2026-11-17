@@ -17,3 +17,27 @@ class UnrecognizedLine(BaseModel):
 class ParseResult(BaseModel):
     cards: list[ParsedCardLine]
     unrecognized_lines: list[UnrecognizedLine]
+
+
+class DeckCard(BaseModel):
+    name: str = Field(min_length=1)
+    quantity: int = Field(gt=0)
+
+
+class Decklist(BaseModel):
+    name: str
+    cards: list[DeckCard]
+
+
+class MissingCard(BaseModel):
+    name: str
+    needed: int
+    owned: int
+
+
+class DeckMatch(BaseModel):
+    deck_name: str
+    owned_cards: int
+    total_cards: int
+    percent_owned: float
+    missing: list[MissingCard]
