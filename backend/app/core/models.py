@@ -41,3 +41,8 @@ class DeckMatch(BaseModel):
     total_cards: int
     percent_owned: float
     missing: list[MissingCard]
+
+
+class AnalysisResult(BaseModel):
+    unrecognized_lines: list[UnrecognizedLine]
+    matches: list[DeckMatch]
